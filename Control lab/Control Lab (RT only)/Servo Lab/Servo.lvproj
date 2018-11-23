@@ -110,6 +110,7 @@ DirectoryIndex index.htm
 			<Item Name="Controller" Type="Folder">
 				<Item Name="Controller Values.ctl" Type="VI" URL="../Real-Time/Controller/Controller Values.ctl"/>
 				<Item Name="Controller.vi" Type="VI" URL="../Real-Time/Controller/Controller.vi"/>
+				<Item Name="Controller2.vi" Type="VI" URL="../Real-Time/Controller/Controller2.vi"/>
 			</Item>
 			<Item Name="Controls" Type="Folder">
 				<Item Name="Experiment Inputs.ctl" Type="VI" URL="../Controls/Experiment Inputs.ctl"/>
