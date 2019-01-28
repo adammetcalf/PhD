@@ -1,7 +1,7 @@
 function [X0,X1,X2] = FKin (L0,L1,T0,T1);
 
 % This funtion uses the link lengths and angles and performs forward
-% kinematics to findnthe end effector position.
+% kinematics to find the end effector position.
 
 %the shoulder is always at the origin
 X0 = [0

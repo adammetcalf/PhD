@@ -1,3 +1,5 @@
+%This is a dynamic model of the myPAM
+
 clc; %clear the command window.
 clear; % clear the workspace.
 
@@ -8,17 +10,43 @@ L1 = 0.25; %meters.
 %Initialse angles.
 T0_deg = 0; %degrees.
 T1_deg = 90; % degrees.
-T0_rad = degtorad(T0_deg); % radians.
-T1_rad = degtorad(T1_deg); % radians.
+T0_rad = deg2rad(T0_deg); % radians.
+T1_rad = deg2rad(T1_deg); % radians.
 
-%Initialise end effector Jacobian (J_ee_theta)(should probably make this a
-%function, since it will be called every iteration of the loop).
-J_ee_theta = [-L0*sin(T0_rad)-L1*sin(T0_rad+T1_rad) -L1*sin(T0_rad+T1_rad)
-              L0*cos(T0_rad)+L1*cos(T0_rad+T1_rad) +L1*cos(T0_rad+T1_rad)
-              0 0
-              0 0
-              0 0
-              1 1];
+% Initialise Jacobian matrices for COMs in cartesian space. Note, this will
+% be required every iteration of the loop, thus it is necessary to use
+% functions
+
+    %Initialise COM1 Jacobian, J_theta_COM1
+    J_theta_COM1 = J_theta_COM1(L0,T0_rad);
+    
+    %Initialise COM2 Jacobian, J_theta_COM2
+    J_theta_COM2 = J_theta_COM2(L0,T0_rad);
+    
+    %Initialise COM3 Jacobian, J_theta_COM3
+    J_theta_COM3 = J_theta_COM3(L0,L1,T0_rad,T1_rad);
+
+    %Initialise end effector Jacobian (COM4), J_ee_theta
+    J_ee_theta = J_ee_theta(L0,L1,T0_rad,T1_rad);
+    
+% Initialise the Mass Matrices in cartesian space for each COM. Note, this
+% only needs to be done once, therefore no functions need to be created for
+% this.
+
+    %Initialise COM1 Cartesian Mass Matrix, M_x1
+    M_x1 = [];
+    
+    %Initialise COM2 Cartesian Mass Matrix, M_x2
+    M_x2 = [];
+    
+    %Initialise COM3 Cartesian Mass Matrix, M_x3
+    M_x3 = [];
+
+    %Initialise COM4 Cartesian Mass Matrix, M_x4
+    M_x4 = [];
+
+%Initialise the Mass matrix in joint space. Note that this is a fucntion since it will be called every iteration of the loop.    
+M_theta = M_theta(J_theta_COM1,J_theta_COM2,J_theta_COM4,J_ee_theta,M_x1,M_x2,M_x3,M_x4);
 
 %Perform Forward Kinematics.
 [X0,X1,X2] = FKin(L0,L1,T0_rad,T1_rad);
