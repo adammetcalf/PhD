@@ -1,9 +1,0 @@
-[My Computer]
-My Computer = "10.41.215.190"
-
-[NI-myRIO-V-Sim]
-NI-myRIO-V-Sim = "172.22.11.2"
-
-[NI-sbRIO9626-myPAM1]
-NI-sbRIO9626-myPAM1 = "192.168.0.15"
-
