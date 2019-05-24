@@ -91,9 +91,14 @@ figure (1)
 subplot(1,2,1)
 plot(it, output(1,:));
 xlabel('iteration')
-ylabel('X-error')
+ylabel('X-error (N)')
 
 subplot(1,2,2)
 plot(it, output(2,:));
 xlabel('iteration')
-ylabel('Y-error')
+ylabel('Y-error (N)')
+
+avx = sum(abs(output(1,:)))/count
+avy = sum(abs(output(2,:)))/count
+maxerrorx = max(abs(output(1,:)))
+maxerrory = max(abs(output(2,:)))
