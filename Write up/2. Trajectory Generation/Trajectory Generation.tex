@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, left=37.5mm, right=20mm, top=20mm, bottom=20mm} %sets margins to correct size
+\usepackage{setspace}
+\usepackage[super]{nth}
+
+\title{Trajectory Generation}
+\date{\vspace{-5ex}} %ommits date, and date spacing.
+
+\begin{document}
+\maketitle
+\onehalfspacing
+As described in section 1.2.2, in the current version of the MyPAM the game generates equidistant intermediate positions between the start position and the final position of each reaching movement and passes these one at a time to the low-level controller. This leads to a number of issues:
+%Start numbered list
+	\begin{enumerate}
+	\item A linear trajectory of this nature is not 		reflective of natural human motion, although
+	there is no evidence that normative trajectories 		which mimic human motion promote
+	neurofunctional plasticity (Marchal-Crespo and 			Reinkensmeyer, 2009).
+	\item The game does not operate at 30 Hz reliably 		as a result of being dependant of the
+	non-deterministic Microsoft Windows Operating 			System (OS). There may be
+	instances where the game rate will drop, resulting 		in incorrect intermediate position
+	data being sent to the controller.
+	\item There are occasions where no intermediate 		points are generated and the final target
+	position is sent to the controller as the next 			target, for example during some game
+	types and during transitions between different 			games. This leads to a large difference
+	between the current position and the target 			position, and large motor demands are
+	generated. This leads to aggressive accelerations 		and potentially dangerous
+	interaction forces between the patient and the 			robot.
+	\end{enumerate} 
+%End numbered list
+\section{Generating a Smooth Trajectory}
+A smooth trajectory is desirable when assisting the user to reach a target. This is
+because smooth trajectories are necessary to ensure safe interaction between the robot and
+the patient (Amirabdollahian et al, 2002) and movement smoothness is an indicator of
+increased motor control after stroke according to Balasubramanian et al (2015), though there
+is no evidence to suggest that assisting a smooth movement increases neurofunctional
+plasticity. Mathematically, a smooth trajectory translates to minimising the rate of change of
+an input, where the input corresponds to the order of the system. For example, a \nth{1} order
+system corresponds to a kinematic model where velocities may be arbitrarily specified. This
+is summarised in the table 3.1 below:\\
+\begin{table}
+	\centering
+	%\begin{center}
+	\begin{tabular}{|c|c|}
+	\hline
+	\textbf{Order of the system} &\textbf{Input to the 		system}\\ \hline
+	\nth{1} &10 \\ \hline
+	\nth{2} &10 \\ \hline
+	\nth{3} &10 \\ \hline
+	\nth{4} &10 \\ \hline
+	\nth{5} &10 \\ \hline
+	\nth{6} &10 \\ \hline
+	\end{tabular}
+	\caption{Table to test captions and labels}
+	\label{table:1}
+\end{table}
+
+\end{document}

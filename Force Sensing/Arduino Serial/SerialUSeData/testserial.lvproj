@@ -1564,6 +1564,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Binary Number to Decimal Number_LV2012_NI Verified.vi" Type="VI" URL="../Binary Number to Decimal Number_LV2012_NI Verified.vi"/>
 		<Item Name="Binary String to Decimal Number_LV2012_NI Verified.vi" Type="VI" URL="../Binary String to Decimal Number_LV2012_NI Verified.vi"/>
 		<Item Name="testserialRT.vi" Type="VI" URL="../testserialRT.vi"/>
+		<Item Name="filter.vi" Type="VI" URL="../filter.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
