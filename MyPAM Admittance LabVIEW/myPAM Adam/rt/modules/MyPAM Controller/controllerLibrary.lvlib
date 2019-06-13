@@ -84,6 +84,7 @@
 	</Item>
 	<Item Name="AdmittanceGains.ctl" Type="VI" URL="../Controls/AdmittanceGains.ctl"/>
 	<Item Name="ControlVariables.ctl" Type="VI" URL="../Controls/ControlVariables.ctl"/>
+	<Item Name="enableMotors.vi" Type="VI" URL="../SubVIs/enableMotors.vi"/>
 	<Item Name="CountsToTheta.vi" Type="VI" URL="../SubVIs/CountsToTheta.vi"/>
 	<Item Name="AdmittanceFilter.vi" Type="VI" URL="../SubVIs/AdmittanceFilter.vi"/>
 	<Item Name="ControllerMain.vi" Type="VI" URL="../SubVIs/ControllerMain.vi"/>

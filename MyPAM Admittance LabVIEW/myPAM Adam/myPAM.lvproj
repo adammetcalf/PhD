@@ -175,7 +175,6 @@ AddOutputFilter chunkFilter
 				<Property Name="Mode" Type="Int">0</Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">myRIO-1900/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSMYRIO_1900FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/adamg/Desktop/Personal/PhD Research/PhD Research/PhD/MyPAM Admittance LabVIEW/myPAM Adam/FPGA/FPGA (Top Level).vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">0</Property>
 				<Property Name="SWEmulationVIPath" Type="Path"></Property>
@@ -2412,11 +2411,8 @@ AddOutputFilter chunkFilter
 				<Property Name="crio.ModuleContainerType" Type="Str">crio.RSIModuleContainer</Property>
 			</Item>
 		</Item>
-		<Item Name="enableMotors.vi" Type="VI" URL="../rt/modules/MyPAM Controller/SubVIs/enableMotors.vi"/>
 		<Item Name="Encoder scales.vi" Type="VI" URL="../FPGA Bitfiles/Encoder scales.vi"/>
-		<Item Name="Pot Tests.vi" Type="VI" URL="../Pot Tests.vi"/>
 		<Item Name="RT (Top Level).vi" Type="VI" URL="../rt/RT (Top Level).vi"/>
-		<Item Name="RT_encoder_test.vi" Type="VI" URL="../FPGA Bitfiles/RT_encoder_test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="FPGA Reference.ctl" Type="VI" URL="/&lt;instrlib&gt;/Devantech SRF02/FPGA Example/Serial/Private/FPGA Reference.ctl"/>
@@ -2447,7 +2443,6 @@ AddOutputFilter chunkFilter
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI STM.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/STM/NI STM.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
