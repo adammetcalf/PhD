@@ -84,11 +84,21 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="loggingModuleTests" Type="Folder">
+				<Item Name="UDT_loggingModule_Postrun.lvtest" Type="TestItem" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Postrun.lvtest">
+					<Property Name="utf.test.bind" Type="Str">loggingModule.lvlib:Postrun.vi</Property>
+					<Property Name="utf.vector.test.bind" Type="Str">E139411F-69C1-73BB-1B9F-F669B6F44C0E</Property>
+				</Item>
+				<Item Name="UDT_loggingModule_Postrun.vi" Type="VI" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Postrun.vi"/>
 				<Item Name="UDT_loggingModule_Prerun.lvtest" Type="TestItem" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Prerun.lvtest">
 					<Property Name="utf.test.bind" Type="Str">loggingModule.lvlib:Prerun.vi</Property>
-					<Property Name="utf.vector.test.bind" Type="Str">069E07AD-5BD8-4C22-514D-81BB19566D61</Property>
+					<Property Name="utf.vector.test.bind" Type="Str">594DB1C9-57CF-F75E-AEB4-D30FF422634A</Property>
 				</Item>
 				<Item Name="UDT_loggingModule_Prerun.vi" Type="VI" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Prerun.vi"/>
+				<Item Name="UDT_loggingModule_Start.lvtest" Type="TestItem" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Start.lvtest">
+					<Property Name="utf.test.bind" Type="Str">loggingModule.lvlib:loggingModuleStart.vi</Property>
+					<Property Name="utf.vector.test.bind" Type="Str">A9875AFF-2036-62B7-AD05-964CCF284875</Property>
+				</Item>
+				<Item Name="UDT_loggingModule_Start.vi" Type="VI" URL="../Unit Tests/loggingModuleTests/UDT_loggingModule_Start.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -145,14 +155,16 @@
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
-		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
-		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str"></Property>
 		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
 
 NI.ServerName default
