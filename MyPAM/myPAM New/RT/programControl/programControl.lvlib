@@ -19,12 +19,9 @@
 		</Item>
 		<Item Name="programControlQueueFGV.vi" Type="VI" URL="../Queue/programControlQueueFGV.vi"/>
 	</Item>
-	<Item Name="notifierQueue" Type="Folder">
-		<Item Name="TypeDefs" Type="Folder">
-			<Item Name="notificationMessage.ctl" Type="VI" URL="../Notifier/TypeDefs/notificationMessage.ctl"/>
-			<Item Name="notifierFGVStates.ctl" Type="VI" URL="../Notifier/TypeDefs/notifierFGVStates.ctl"/>
-		</Item>
-		<Item Name="programControlNotifier.vi" Type="VI" URL="../Notifier/programControlNotifier.vi"/>
+	<Item Name="StartUEFGV" Type="Folder">
+		<Item Name="TypeDefs" Type="Folder"/>
+		<Item Name="startUEFGV.vi" Type="VI" URL="../StartUEFGV/startUEFGV.vi"/>
 	</Item>
 	<Item Name="subVIs" Type="Folder">
 		<Item Name="EnqueueErrorMessage.vi" Type="VI" URL="../SubVIs/EnqueueErrorMessage.vi"/>
@@ -33,4 +30,5 @@
 	<Item Name="TypeDefs" Type="Folder">
 		<Item Name="programControlStates.ctl" Type="VI" URL="../TypeDefs/programControlStates.ctl"/>
 	</Item>
+	<Item Name="sendStartEvent.vi" Type="VI" URL="../SubVIs/sendStartEvent.vi"/>
 </Library>

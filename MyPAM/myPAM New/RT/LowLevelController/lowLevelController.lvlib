@@ -21,6 +21,6 @@
 		<Item Name="lowLevelControllerQueueFGV.vi" Type="VI" URL="../Queue/lowLevelControllerQueueFGV.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
-		<Item Name="EnableMotors.vi" Type="VI" URL="../SubVIs/EnableMotors.vi"/>
+		<Item Name="enableMotors.vi" Type="VI" URL="../SubVIs/enableMotors.vi"/>
 	</Item>
 </Library>
