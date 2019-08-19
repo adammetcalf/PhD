@@ -15,6 +15,10 @@
 			</Item>
 			<Item Name="encoderQueue.vi" Type="VI" URL="../internalQueue/encoderQueue.vi"/>
 			<Item Name="forceQueue.vi" Type="VI" URL="../internalQueue/forceQueue.vi"/>
+			<Item Name="enqueueEncoder.vi" Type="VI" URL="../internalQueue/enqueueEncoder.vi"/>
+			<Item Name="dequeueEncoder.vi" Type="VI" URL="../internalQueue/dequeueEncoder.vi"/>
+			<Item Name="enqueueForce.vi" Type="VI" URL="../internalQueue/enqueueForce.vi"/>
+			<Item Name="dequeueForce.vi" Type="VI" URL="../internalQueue/dequeueForce.vi"/>
 		</Item>
 		<Item Name="externalAqcuisitionPostRun.vi" Type="VI" URL="../externalAqcuisitionPostRun.vi"/>
 		<Item Name="externalAqcuisitionPreRun.vi" Type="VI" URL="../externalAqcuisitionPreRun.vi"/>
@@ -27,6 +31,8 @@
 			<Item Name="queueFGVState.ctl" Type="VI" URL="../Queue/TypeDefs/queueFGVState.ctl"/>
 		</Item>
 		<Item Name="externalAcquisitionQueueFGV.vi" Type="VI" URL="../Queue/externalAcquisitionQueueFGV.vi"/>
+		<Item Name="enqueueMessage.vi" Type="VI" URL="../Queue/enqueueMessage.vi"/>
+		<Item Name="dequeueMessage.vi" Type="VI" URL="../Queue/dequeueMessage.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="rebuildMagBits.vi" Type="VI" URL="../SubVIs/rebuildMagBits.vi"/>

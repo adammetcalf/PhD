@@ -18,6 +18,8 @@
 			<Item Name="message.ctl" Type="VI" URL="../Queue/TypeDefs/message.ctl"/>
 			<Item Name="queueFGVState.ctl" Type="VI" URL="../Queue/TypeDefs/queueFGVState.ctl"/>
 		</Item>
+		<Item Name="dequeueMessage.vi" Type="VI" URL="../Queue/dequeueMessage.vi"/>
+		<Item Name="enqueueMessage.vi" Type="VI" URL="../Queue/enqueueMessage.vi"/>
 		<Item Name="lowLevelControllerQueueFGV.vi" Type="VI" URL="../Queue/lowLevelControllerQueueFGV.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">

@@ -17,10 +17,13 @@
 			<Item Name="message.ctl" Type="VI" URL="../Queue/TypeDefs/message.ctl"/>
 			<Item Name="queueFGVState.ctl" Type="VI" URL="../Queue/TypeDefs/queueFGVState.ctl"/>
 		</Item>
+		<Item Name="dequeueMessage.vi" Type="VI" URL="../Queue/dequeueMessage.vi"/>
+		<Item Name="enqueueMessage.vi" Type="VI" URL="../Queue/enqueueMessage.vi"/>
 		<Item Name="programControlQueueFGV.vi" Type="VI" URL="../Queue/programControlQueueFGV.vi"/>
 	</Item>
 	<Item Name="StartUEFGV" Type="Folder">
 		<Item Name="TypeDefs" Type="Folder"/>
+		<Item Name="sendStartEvent.vi" Type="VI" URL="../SubVIs/sendStartEvent.vi"/>
 		<Item Name="startUEFGV.vi" Type="VI" URL="../StartUEFGV/startUEFGV.vi"/>
 	</Item>
 	<Item Name="subVIs" Type="Folder">
@@ -30,5 +33,5 @@
 	<Item Name="TypeDefs" Type="Folder">
 		<Item Name="programControlStates.ctl" Type="VI" URL="../TypeDefs/programControlStates.ctl"/>
 	</Item>
-	<Item Name="sendStartEvent.vi" Type="VI" URL="../SubVIs/sendStartEvent.vi"/>
+	<Item Name="manageQueues.vi" Type="VI" URL="../SubVIs/manageQueues.vi"/>
 </Library>

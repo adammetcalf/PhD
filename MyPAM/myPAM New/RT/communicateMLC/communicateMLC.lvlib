@@ -19,8 +19,11 @@
 			<Item Name="queueFGVState.ctl" Type="VI" URL="../Queue/TypeDefs/queueFGVState.ctl"/>
 		</Item>
 		<Item Name="communicateMLCQueueFGV.vi" Type="VI" URL="../Queue/communicateMLCQueueFGV.vi"/>
+		<Item Name="dequeueMessage.vi" Type="VI" URL="../Queue/dequeueMessage.vi"/>
+		<Item Name="enqueueMessage.vi" Type="VI" URL="../Queue/enqueueMessage.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="initListenData.vi" Type="VI" URL="../SubVIs/initListenData.vi"/>
 		<Item Name="listenUDP.vi" Type="VI" URL="../SubVIs/listenUDP.vi"/>
 		<Item Name="ShutdownReceived.vi" Type="VI" URL="../SubVIs/ShutdownReceived.vi"/>
 		<Item Name="transmitUDP.vi" Type="VI" URL="../SubVIs/transmitUDP.vi"/>
