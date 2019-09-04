@@ -25,7 +25,9 @@
 			<Item Name="initListenFGV.vi" Type="VI" URL="../SubVIs/initListenFGV.vi"/>
 			<Item Name="readDataIn.vi" Type="VI" URL="../SubVIs/readDataIn.vi"/>
 			<Item Name="startStartStopFGV.vi" Type="VI" URL="../SubVIs/startStartStopFGV.vi"/>
+			<Item Name="stateChange.vi" Type="VI" URL="../SubVIs/stateChange.vi"/>
 			<Item Name="stopFGV.vi" Type="VI" URL="../SubVIs/stopFGV.vi"/>
+			<Item Name="targetMet.vi" Type="VI" URL="../SubVIs/targetMet.vi"/>
 			<Item Name="UDPListenFGV.vi" Type="VI" URL="../SubVIs/UDPListenFGV.vi"/>
 			<Item Name="updateDataOut.vi" Type="VI" URL="../SubVIs/updateDataOut.vi"/>
 		</Item>

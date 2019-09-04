@@ -180,10 +180,6 @@ AddOutputFilter chunkFilter
 				</Item>
 				<Item Name="DataFGV.vi" Type="VI" URL="../RT/SubVIs/FGVs/DataFGV.vi"/>
 			</Item>
-			<Item Name="Get Data In.vi" Type="VI" URL="../RT/SubVIs/Get Data In.vi"/>
-			<Item Name="Get Data Out.vi" Type="VI" URL="../RT/SubVIs/Get Data Out.vi"/>
-			<Item Name="Set Data In.vi" Type="VI" URL="../RT/SubVIs/Set Data In.vi"/>
-			<Item Name="Set Data Out.vi" Type="VI" URL="../RT/SubVIs/Set Data Out.vi"/>
 			<Item Name="RawStringtoCluster.vi" Type="VI" URL="../RT/SubVIs/RawStringtoCluster.vi"/>
 			<Item Name="ClustertoRawString.vi" Type="VI" URL="../RT/SubVIs/ClustertoRawString.vi"/>
 		</Item>
@@ -194,7 +190,6 @@ AddOutputFilter chunkFilter
 		<Item Name="admittanceControllerLibrary.lvlib" Type="Library" URL="../RT/Admittance Controller/admittanceControllerLibrary.lvlib"/>
 		<Item Name="loggingModule.lvlib" Type="Library" URL="../RT/loggingModule/loggingModule.lvlib"/>
 		<Item Name="ErrorMonitor.lvlib" Type="Library" URL="../RT/ErrorMonitor/ErrorMonitor.lvlib"/>
-		<Item Name="RT Main.vi" Type="VI" URL="../RT/RT Main.vi"/>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -1702,6 +1697,8 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="RT Main.vi" Type="VI" URL="../RT/RT Main.vi"/>
+		<Item Name="deleteme.vi" Type="VI" URL="../deleteme.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -1801,6 +1798,8 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Get Data Out.vi" Type="VI" URL="../RT/SubVIs/Get Data Out.vi"/>
+			<Item Name="Set Data Out.vi" Type="VI" URL="../RT/SubVIs/Set Data Out.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

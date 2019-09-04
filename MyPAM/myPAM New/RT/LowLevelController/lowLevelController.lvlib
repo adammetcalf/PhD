@@ -25,4 +25,5 @@
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="enableMotors.vi" Type="VI" URL="../SubVIs/enableMotors.vi"/>
 	</Item>
+	<Item Name="getAllData.vi" Type="VI" URL="../SubVIs/getAllData.vi"/>
 </Library>
